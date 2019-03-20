@@ -6,7 +6,7 @@
     <div class="banner">
     	<div class="turnplate">
     		<canvas class="item" id="wheelcanvas" width="422px" height="422px"></canvas>
-    		<img class="pointer" src="../assets/jt.png"@click="start"/>
+    		<img class="pointer" src="../assets/jt.png" @click="start"/>
     	</div>
     </div>
 

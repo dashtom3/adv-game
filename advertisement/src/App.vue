@@ -11,6 +11,7 @@ export default {
 </script>
 
 <style>
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -18,8 +19,13 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
+@font-face {
+    font-family: 'Lucida';
+    src: url('./assets/Lucida Handwriting Italic.ttf');
+  }
 body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div{margin:0;padding:0;border:0;}
-	body{color:#333; font-size:12px;font-family:"Microsoft YaHei"}
+	body{color:#333; font-size:12px;font-family:"Lucida"}
+  canvas{font-family: 'Lucida'}
 	ul,ol{list-style-type:none;}
 	select,input,img,select{vertical-align:middle;}
 	input{ font-size:12px;}

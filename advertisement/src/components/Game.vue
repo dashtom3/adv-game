@@ -33,7 +33,7 @@ export default {
       var self = this
       axios.get(this.baseUrl + 'game/getGameById?gameId=' + this.gameId).then((res) => {
         self.data = res.data.data
-        console.log(self.data)
+        // console.log(self.data)
         window.location.href = self.data.src
       }).catch((res) => {
         MessageBox("消息","网络访问出现问题");
@@ -45,7 +45,7 @@ export default {
       var dataTime = time.getFullYear() + '-' + (time.getMonth() + 1) + '-' + time.getDate() + ' ' + time.getHours() + ':'+time.getMinutes() + ':'+time.getSeconds() ;
       data[0].operateDate = dataTime
       axios.post(this.baseUrl + 'record/addOperateRecord?mac=' + this.mac,data).then((res) => {
-        console.log(res)
+        // console.log(res)
       }).catch((res) => {
         MessageBox("消息","网络访问出现问题");
       })
